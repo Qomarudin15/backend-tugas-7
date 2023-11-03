@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biodata Node JS</title>
+  <link rel="stylesheet" type="text/css" href="./app.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  width: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(131,  130, 130);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Isi biodata dengan benar</h1>
+  <form action="/submit-form" method="POST">
+    <label for="name">Nama:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="address">Alamat:</label><br>
+    <input type="text" id="address" name="address"><br>
+    <label for="job">Pekerjaan:</label><br>
+    <input type="text" id="job" name="job"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
